@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="pass.js" defer></script>
+    <link rel="stylesheet" href="pass.css">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous"
+    
+    
+     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0-beta2/css/all.css" integrity="sha384-sSraS5RtPp6yvYbSS7iKtoVBVmXkX+uF1HT8V2geuE/PJfV7KNBO+x0bY7VgjCfX" crossorigin="anonymous">  -->
+
+    
+</head>
+<body>
+    <header class="container">
+        <div class="box">
+            <section class="upper">
+                <p>
+                   <span><i class="fa-solid fa-lock" style="color:#617143"></i></span>
+                    Password Generator
+                </p>
+               <div id="password">
+
+               </div>
+               <div class="password-range">
+                <label for="range">
+                    Password Length
+                    <span id="rangeVal">8</span>
+                </label>
+                <input type="range" min="1" max="20" value="8" id="rangeInput" aria-label="range">
+               </div>
+
+                <div class="checkbox-container">
+                     <div class="checkbox">
+                         <label for="uppercase">Include uppercase</label>
+                         <input type="checkbox" name="uppercase" id="uppercase" aria-label="checkbox">
+                     </div>
+                     <div class="checkbox">
+                         <label for="numbers">Include numbers</label>
+                         <input type="checkbox" name="numbers " id="numbers" aria-label="checkbox">
+                     </div>
+                       <div class="checkbox">
+                        <label for="symbol">Include symbol</label>
+                        <input type="checkbox" name="symbol" id="symbols" aria-label="checkbox">
+                      </div>
+                </div>
+            </section>
+            <button id="genBtn">Generate Password</button>
+        </div>
+    </header>
+</body>
+</html>
